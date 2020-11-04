@@ -18,8 +18,9 @@ class Queue:
 
         if self.first is None:
             self.first = node
+        self._size = self._size + 1
 
     def pop(self):
         # remove o final da fila
-    
-    
+        if self.first is not None:
+            pass
