@@ -1,4 +1,8 @@
-from node import Node
+class Node:
+
+    def __init__(self, data):
+        self.data = data
+        self.next = None
 
 
 class Queue:
@@ -22,5 +26,33 @@ class Queue:
 
     def pop(self):
         # remove o final da fila
-        if self.first is not None:
-            pass
+        if self._size > 0:
+            elem = self.first.data
+            self.first = self.first.next
+            self._size = self._size - 1
+            return elem
+        raise IndexError("The queue is empty")
+
+    def peek(self):
+        # retorne o topo sem remover
+        if self._size > 0:
+            elem = self.first.data
+            return elem
+        raise IndexError("The queue is empty")
+
+    def __len__(self):
+        """Retorna o tamanho da lista"""
+        return self._size
+
+    def __repr__(self):
+        if self._size > 0:
+            r = ""
+            pointer = self.first
+            while(pointer):
+                r = r + str(pointer.data) + " "
+                pointer = pointer.next
+            return r
+        return "Empty Queue"
+
+    def __str__(self):
+        return self.__repr__()
