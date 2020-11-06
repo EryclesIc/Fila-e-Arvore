@@ -1,5 +1,4 @@
 class Node:
-
     def __init__(self, data):
         self.data = data
         self.next = None
@@ -49,7 +48,7 @@ class Queue:
             r = ""
             pointer = self.first
             while(pointer):
-                r = r + str(pointer.data) + " "
+                r = r + str(pointer.data) + "  -->  "
                 pointer = pointer.next
             return r
         return "Empty Queue"
