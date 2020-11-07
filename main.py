@@ -5,10 +5,6 @@ import random
 
 fila = Queue()
 
-<<<<<<< HEAD
-data = pd.read_csv('https://dl.dropbox.com/s/v3s6aamlpofnv4m/metadata.csv?dl=1', encoding="UTF-8")
-print(data.head())
-=======
 # efetua a leitura do Csv com a biblioteca pandas
 df = pd.read_csv("https://raw.githubusercontent.com/EryclesIc/Fila-e-Arvore/main/metadatinha.csv", encoding="UTF-8")
 
@@ -28,4 +24,3 @@ for i in range(100):
     # print(teste[1])
 
 print(fila)
->>>>>>> f7ebbe83d04eef6695695fb7c5bc2c97423057d3
