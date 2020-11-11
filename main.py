@@ -22,6 +22,9 @@ def menu_listas():
             ordenar_lista(1)
         elif escolha == 2:
             apagar_elem(1)
+        else:
+        print("Opção inválida!")
+        menu_listas()
     elif escolha == 2:
         print("Tudo bem, qual operação você deseja?")
         print(arvore)
@@ -32,6 +35,12 @@ def menu_listas():
             ordenar_lista(2)
         elif escolha == 2:
             apagar_elem(2)
+        else:
+        print("Opção inválida!")
+        menu_listas()
+    else:
+        print("Opção inválida!")
+        menu_listas()
 
 
 def apagar_elem(estrutura):
@@ -50,6 +59,9 @@ def apagar_elem(estrutura):
             apagar_elem(1)
         elif escolha == 2:
             menu_listas()
+        else:
+        print("Opção inválida!")
+        apagar_elem(1)
     elif estrutura == 2:
         print(arvore)
         print("Digite o elemento que deseja apagar:")
@@ -65,6 +77,9 @@ def apagar_elem(estrutura):
             apagar_elem(1)
         elif escolha == 2:
             menu_listas()
+        else:
+        print("Opção inválida!")
+        apagar_elem(2)
 
 
 def ordenar_lista(estrutura):
