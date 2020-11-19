@@ -6,7 +6,6 @@ class BinaryTree(object):
         self.right = right
  
     def add(self, node):
-        # print(node.key)
         if node.key < self.key:
             if self.left is None:
                 self.left = node
