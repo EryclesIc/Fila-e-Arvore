@@ -13,26 +13,26 @@ total_rows = len(df)
 total_cols = len(df.columns)
 print("o csv tem {} linhas e {} colunas".format(total_rows, total_cols))
 
-# for i in range(3):
-#     coluna_sorteada = random.randint(0, total_cols)-1
-#     for j in range(100):
-#         linha_sorteada = random.randint(0, total_rows)-1
+for i in range(3):
+    coluna_sorteada = random.randint(0, total_cols)-1
+    for j in range(100):
+        linha_sorteada = random.randint(0, total_rows)-1
         
-#         # salva o dado da linha e coluna sorteada em uma variável
-#         elemento = df.iloc[linha_sorteada][coluna_sorteada]
-#         # print(elemento)
+        # salva o dado da linha e coluna sorteada em uma variável
+        elemento = df.iloc[linha_sorteada][coluna_sorteada]
+        # print(elemento)
 
-#         if j == 0: arvore = BinaryTree(linha_sorteada, elemento)
-#         else:
-#             node = BinaryTree(linha_sorteada, elemento)
-#             arvore.add(node)
-#     arvore.traverse()
-#     print("-------------------------------------------")
-#     chave = int(input())
-#     print("-------------------------------------------")
-#     arvore.remove(chave)
-#     arvore.traverse()
-#     print("-------------------Fim da Arvore {}------------------------".format(i))
+        if j == 0: arvore = BinaryTree(linha_sorteada, elemento)
+        else:
+            node = BinaryTree(linha_sorteada, elemento)
+            arvore.add(node)
+    arvore.traverse()
+    print("-------------------------------------------")
+    chave = int(input())
+    print("-------------------------------------------")
+    arvore.remove(chave)
+    arvore.traverse()
+    print("-------------------Fim da Arvore {}------------------------".format(i))
 
 for j in range(100):
     linha_sorteada = random.randint(0, total_rows)-1
