@@ -6,7 +6,7 @@ import random
 fila = Queue()
 
 # efetua a leitura do csv com a biblioteca pandas
-df = pd.read_csv("https://raw.githubusercontent.com/EryclesIc/Fila-e-Arvore/main/metadatinha.csv", encoding="UTF-8")
+df = pd.read_csv("https://raw.githubusercontent.com/EryclesIc/Fila-e-Arvore/main/metadata.csv", encoding="UTF-8")
 
 # calcula a quantidade total de linhas e colunas
 total_rows = len(df)
