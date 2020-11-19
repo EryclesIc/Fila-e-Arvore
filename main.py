@@ -1,5 +1,5 @@
 from estruturaFila import Queue
-from estruturaArvore import BSTNode
+from estruturaArvore import BinaryTree
 import pandas as pd
 import random
 
@@ -26,9 +26,9 @@ for i in range(3):
         elemento = df.iloc[linha_sorteada][coluna_sorteada]
         # print(elemento)
 
-        if j == 0: arvore = BSTNode(linha_sorteada, elemento)
+        if j == 0: arvore = BinaryTree(linha_sorteada, elemento)
         else:
-            node = BSTNode(linha_sorteada, elemento)
+            node = BinaryTree(linha_sorteada, elemento)
             arvore.add(node)
     arvore.traverse()
     print("-------------------------------------------")

@@ -1,4 +1,4 @@
-class BSTNode(object):
+class BinaryTree(object):
     def __init__(self, key, value=None, left=None, right=None):
         self.key = key
         self.value = value
@@ -57,3 +57,10 @@ class BSTNode(object):
             return self.right
         self.left = self.left._removeMin()
         return self
+    
+    # def apagar(self):
+    #     if self.left:
+    #         self.left.apagar()
+    #     if self.right:
+    #         self.right.apagar()
+    #     del self
